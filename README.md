@@ -1,6 +1,6 @@
 # AgoraOCR
 
-**Developed by Sysnova AI Organization**
+**Developed by Sysnova AI Organization Team Lead Alif Arman**
 
 AgoraOCR is a high-fidelity, layout-preserving Optical Character Recognition (OCR) web application. Unlike traditional OCR tools that focus solely on raw text extraction, AgoraOCR is engineered for **document reconstruction**. It extracts text from images and PDF files while rigorously maintaining the original spatial formatting, including paragraph structure, line breaks, indentation, and columnar alignment.
 
@@ -157,4 +157,4 @@ Security is a priority for Sysnova AI. Please adhere to the following guidelines
 ## License
 
 This project is proprietary software developed by Sysnova AI Organization.
-*(Please update this section with the specific license text, e.g., MIT, Apache 2.0, or Proprietary License details).*
+*MIT, Apache 2.0*
