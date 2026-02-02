@@ -12,9 +12,9 @@ const ModelSelector: React.FC<ModelSelectorProps> = ({ selectedModel, onModelCha
   const [isOpen, setIsOpen] = useState(false);
 
   const models = [
-    { id: ModelType.GEMINI_3_PRO, name: 'Gemini 3.0 Pro', desc: 'Highest reasoning & layout preservation' },
-    { id: ModelType.GEMINI_3_FLASH, name: 'Gemini 3.0 Flash', desc: 'Fastest, optimized for high volume' },
-    { id: ModelType.GEMINI_2_5_FLASH, name: 'Gemini 2.5', desc: 'Balanced performance' },
+    { id: ModelType.GEMINI_3_PRO, name: '3.0 Pro', desc: 'Highest reasoning & layout preservation' },
+    { id: ModelType.GEMINI_3_FLASH, name: '3.0 Flash', desc: 'Fastest, optimized for high volume' },
+    { id: ModelType.GEMINI_2_5_FLASH, name: '2.5', desc: 'Balanced performance' },
   ];
 
   return (
