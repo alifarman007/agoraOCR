@@ -228,7 +228,7 @@ const App: React.FC = () => {
                   </div>
                   <div>
                     <h2 className="text-lg font-semibold text-slate-800">Extracted Output</h2>
-                    <p className="text-xs text-slate-500">Editable • Formatted • {selectedModel}</p>
+                    <p className="text-xs text-slate-500">Editable • Formatted • </p>
                   </div>
                 </div>
                 {result && (
