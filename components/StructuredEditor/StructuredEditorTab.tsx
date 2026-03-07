@@ -6,6 +6,7 @@ import { performOCR } from '../../services/geminiService';
 import { structureDeliveryChalan } from '../../services/structureService';
 import { DeliveryChalanDocument } from '../../types/delivery-chalan';
 import ChalanEditor from './ChalanEditor';
+import AnalyticsPanel from '../AnalyticsPanel';
 
 const StructuredEditorTab: React.FC = () => {
   const [selectedModel, setSelectedModel] = useState<ModelType>(ModelType.GEMINI_3_FLASH);
@@ -56,6 +57,9 @@ const StructuredEditorTab: React.FC = () => {
       setStatus('structuring');
       const structuredResult = await structureDeliveryChalan(ocrResult.text, selectedModel);
       
+      // Add OCR usage to the document
+      structuredResult.ocr_usage = ocrResult.usageMetadata;
+      
       setStructuredDoc(structuredResult);
       setStatus('ready');
 
@@ -78,6 +82,13 @@ const StructuredEditorTab: React.FC = () => {
                 Upload New Document
             </button>
          </div>
+         
+         <AnalyticsPanel 
+            ocrUsage={structuredDoc.ocr_usage} 
+            structuringUsage={structuredDoc.structuring_usage} 
+            modelUsed={selectedModel} 
+         />
+         
          <ChalanEditor initialDocument={structuredDoc} imageUrl={fileData.previewUrl} />
       </div>
     );

@@ -4,6 +4,8 @@
 // DELIVERY CHALAN STRUCTURED DATA TYPES
 // ============================================
 
+import { UsageMetadata } from "../types";
+
 /**
  * The complete structured representation of a Delivery Chalan.
  * This is the main data object that flows through the entire V2 pipeline:
@@ -39,6 +41,10 @@ export interface DeliveryChalanDocument {
   ai_confidence: number;
   processing_model: string;
   processed_at: string;
+
+  // --- Analytics ---
+  ocr_usage?: UsageMetadata;
+  structuring_usage?: UsageMetadata;
 }
 
 export interface PartyInfo {

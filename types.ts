@@ -4,13 +4,15 @@ export enum ModelType {
   GEMINI_2_5_FLASH = 'gemini-2.5-flash-latest',
 }
 
+export interface UsageMetadata {
+  promptTokenCount?: number;
+  candidatesTokenCount?: number;
+  totalTokenCount?: number;
+}
+
 export interface OCRResult {
   text: string;
-  usageMetadata?: {
-    promptTokenCount: number;
-    candidatesTokenCount: number;
-    totalTokenCount: number;
-  };
+  usageMetadata?: UsageMetadata;
   modelUsed: string;
 }
 

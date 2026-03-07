@@ -43,7 +43,7 @@ const SummarySection: React.FC<SummarySectionProps> = ({ document, onUpdate }) =
              <div className="w-1/3">
                 <input
                   type="text"
-                  value={item.key}
+                  value={item.key || ''}
                   onChange={(e) => updateSummaryField(item.id, 'key', e.target.value)}
                   className="w-full text-sm font-medium text-slate-600 text-right bg-transparent border-none focus:ring-0 placeholder-slate-300 bangla-text"
                   placeholder="Label"
@@ -53,7 +53,7 @@ const SummarySection: React.FC<SummarySectionProps> = ({ document, onUpdate }) =
               <div className="w-1/3">
                 <input
                   type="text"
-                  value={item.value}
+                  value={item.value || ''}
                   onChange={(e) => updateSummaryField(item.id, 'value', e.target.value)}
                   className="w-full text-base font-bold text-slate-900 border border-slate-200 rounded px-2 py-1.5 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-right"
                 />

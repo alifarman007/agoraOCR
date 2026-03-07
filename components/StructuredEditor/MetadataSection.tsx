@@ -52,7 +52,7 @@ const MetadataSection: React.FC<MetadataSectionProps> = ({ document, onUpdate })
               <div className="w-1/3">
                 <input
                   type="text"
-                  value={item.key}
+                  value={item.key || ''}
                   onChange={(e) => updateMetadataField(item.id, 'key', e.target.value)}
                   className="w-full text-xs font-semibold text-slate-600 bg-slate-50 border border-transparent hover:border-slate-300 focus:border-blue-500 rounded px-2 py-1.5 focus:outline-none bangla-text"
                 />
@@ -61,7 +61,7 @@ const MetadataSection: React.FC<MetadataSectionProps> = ({ document, onUpdate })
               <div className="flex-grow">
                 <input
                   type="text"
-                  value={item.value}
+                  value={item.value || ''}
                   onChange={(e) => updateMetadataField(item.id, 'value', e.target.value)}
                   className="w-full text-sm text-slate-900 border border-slate-200 rounded px-2 py-1.5 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none bangla-text"
                 />
@@ -69,7 +69,7 @@ const MetadataSection: React.FC<MetadataSectionProps> = ({ document, onUpdate })
 
               <div className="w-24">
                 <select
-                  value={item.field_type}
+                  value={item.field_type || 'text'}
                   onChange={(e) => updateMetadataField(item.id, 'field_type', e.target.value)}
                   className="w-full text-xs border border-slate-200 rounded px-1 py-1.5 bg-white"
                 >

@@ -103,7 +103,7 @@ const LineItemsTable: React.FC<LineItemsTableProps> = ({ document, onUpdate }) =
                   <div className="flex items-center justify-between">
                     <input 
                        className="bg-transparent border-none p-0 text-xs font-bold uppercase tracking-wider focus:ring-0 w-full bangla-text"
-                       value={col.label}
+                       value={col.label || ''}
                        onChange={(e) => {
                            const newCols = columns.map(c => c.id === col.id ? { ...c, label: e.target.value } : c);
                            onUpdate({ line_items: { ...document.line_items, columns: newCols } });

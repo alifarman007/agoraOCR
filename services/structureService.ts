@@ -116,6 +116,7 @@ export async function structureDeliveryChalan(
       processing_model: modelId,
       processed_at: new Date().toISOString(),
       raw_ocr_text: rawOcrText,
+      structuring_usage: response.usageMetadata,
       // Ensure specific arrays exist and have IDs
       additional_metadata: (parsedData.additional_metadata || []).map((item: any) => ({
         ...item,

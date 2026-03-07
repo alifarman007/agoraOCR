@@ -87,7 +87,7 @@ const PartyInfoSection: React.FC<PartyInfoSectionProps> = ({ document, onUpdate 
           <div key={idx} className="flex items-center space-x-2 pt-2 border-t border-slate-50">
             <input 
               className="w-1/3 text-xs font-medium text-slate-500 border-none focus:ring-0 bg-transparent text-right"
-              value={key}
+              value={key || ''}
               onChange={(e) => {
                  const newAdditional = { ...data.additional };
                  delete newAdditional[key];
@@ -98,7 +98,7 @@ const PartyInfoSection: React.FC<PartyInfoSectionProps> = ({ document, onUpdate 
             <span className="text-slate-300">:</span>
             <input
               className="flex-grow text-sm border-slate-200 rounded-md p-1 border bangla-text"
-              value={value}
+              value={value || ''}
               onChange={(e) => updateAdditional(type, key, e.target.value)}
             />
           </div>
