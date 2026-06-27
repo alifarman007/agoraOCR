@@ -1,5 +1,5 @@
 {
-  "name": "sysnova-ai-ocr",
+  "name": "ocr-agent",
   "private": true,
   "version": "0.0.0",
   "type": "module",

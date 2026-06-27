@@ -10,7 +10,7 @@ const Header: React.FC = () => {
             <ScanText className="h-6 w-6 text-white" />
           </div>
           <div>
-            <h1 className="text-xl font-bold tracking-tight">Sysnova AI Organization</h1>
+            <h1 className="text-xl font-bold tracking-tight">OCR Agent</h1>
             <p className="text-xs text-slate-400 font-medium tracking-wider uppercase">Advanced OCR System</p>
           </div>
         </div>

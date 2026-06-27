@@ -16,7 +16,7 @@ export const performOCR = async (
 
   // Prompt engineering for layout preservation and language support
   const systemInstruction = `
-    You are an advanced Optical Character Recognition (OCR) engine built by Sysnova AI. 
+    You are OCR Agent, an advanced Optical Character Recognition (OCR) engine.
     Your task is to transcribe the content of the provided document (Image or PDF) with extreme accuracy.
 
     Key Directives:

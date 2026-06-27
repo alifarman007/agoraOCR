@@ -245,7 +245,7 @@ const App: React.FC = () => {
                   ) : (
                     <>
                       <Wand2 className="mr-2 h-5 w-5" />
-                      Run Sysnova OCR
+                      Run OCR Agent
                     </>
                   )}
                 </button>
@@ -314,7 +314,7 @@ const App: React.FC = () => {
               </div>
               
               <div className="bg-slate-50 p-3 border-t border-slate-200 text-xs text-slate-500 flex justify-between px-6">
-                 <span>Sysnova OCR Engine Output</span>
+                 <span>OCR Agent Engine Output</span>
                  <div className="flex space-x-4">
                      <span>{editableText.length} characters</span>
                      <span>{editableText.split(/\s+/).filter(w => w.length > 0).length} words</span>

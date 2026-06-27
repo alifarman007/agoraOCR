@@ -1,6 +1,6 @@
 <div align="center">
 
-# Sysnova AI OCR
+# OCR Agent
 
 **AI-powered OCR & structured data extraction for English / Bangla business documents**
 
@@ -12,7 +12,7 @@
 
 ## Overview
 
-Sysnova AI OCR is a browser-based application that reads text from scanned or photographed
+OCR Agent is a browser-based application that reads text from scanned or photographed
 business documents and turns it into clean, editable, exportable data. It is optimized for
 documents that mix **English and Bangla (Bengali)** — challans, invoices, receipts, official
 letters, fee-payment slips and legal summons.
@@ -142,7 +142,7 @@ npm run lint       # type-check (tsc --noEmit)
 1. Open the **Raw OCR (V1)** tab.
 2. (Optional) Open **Model Configuration** and pick a model.
 3. Upload an image or PDF.
-4. Click **Run Sysnova OCR**.
+4. Click **Run OCR Agent**.
 5. Review/edit the transcribed text in the output box, then **Copy** it. Token usage and cost are shown in **Processing Analytics**.
 
 ### V2 — Structured Editor (Delivery Chalan)
@@ -242,4 +242,4 @@ Possible next steps:
 
 ## License
 
-Proprietary — Sysnova AI Organization. All rights reserved.
+Proprietary — OCR Agent. All rights reserved.

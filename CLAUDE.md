@@ -1,4 +1,4 @@
-# CLAUDE.md — agoraOCR ("Sysnova AI OCR")
+# CLAUDE.md — OCR Agent (repo folder: agoraOCR)
 
 Working context for this repository. Read this before making changes.
 
@@ -17,8 +17,8 @@ invoices, receipts, official letters, fee slips, legal summons) that may contain
 - **V1 — Raw OCR:** upload image/PDF → Gemini transcribes it preserving layout → editable text box (copy/edit).
 - **V2 — Structured Editor (Delivery Chalan):** upload chalan → Gemini OCR → second Gemini call parses the text into a structured `DeliveryChalanDocument` JSON → split-pane editor with per-field confidence badges → export to JSON or Excel.
 
-Branding: "Sysnova AI Organization — Advanced OCR System". npm package name `sysnova-ai-ocr`.
-Origin: scaffolded in Google AI Studio (see `migrated_prompt_history/` build transcript and the `ai.studio` link in `README.md`).
+Product name: **OCR Agent** (UI tagline "Advanced OCR System"). npm package name `ocr-agent`. The repo folder is `agoraOCR`.
+Origin: scaffolded in Google AI Studio (see `migrated_prompt_history/` build transcript — a historical log that still contains the old "Sysnova" working name and is intentionally left unedited).
 
 ## 2. Tech stack
 
